@@ -1,26 +1,26 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+// import '../styles/Collapsible.scss';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import your icons
 import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
-// style
 
-function Collapsible ({ label, children, library }) {
+function Collapsible ({ label, children }) {
     const [ Open,  setOpen ] = useState(false)
     const openCollapse = () => {
         setOpen((Open) => !Open)
     } 
         return (
-            <div className="collapsible">
-            <div className="toggle" onClick={openCollapse}>
+            <div className='collapsible'>
+            <div className='collapsible__toggle' onClick={openCollapse}>
                 <h2>{label}</h2>
                 {!Open ? (
-                    <FontAwesomeIcon icon={faArrowDown}/>) : (<FontAwesomeIcon icon={faArrowUp}/>
+                    <FontAwesomeIcon icon={faArrowDown} className='collapsible__arrow'/>) : (<FontAwesomeIcon icon={faArrowUp} className='collapsible__arrow'/>
                 )}
             </div>
                 { Open && 
-            <div className="text_content">
+            <div className='collapsible__content'>
                 {children}
             </div>
                 }

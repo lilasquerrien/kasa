@@ -1,14 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/Logo.png';
-// import '../styles/Header.css';
+// import '../styles/Header.scss';
 
 
 function Header() {
 	return (
 	    <header className='header'>
 			<div className='header__logo'>
-				<img src={ Logo } alt="Logo de Kasa" className='logo__image'/>
+				<img src={ Logo } alt='Logo de Kasa'/>
 			</div>
 			<nav>
 				<NavLink to='/' className={({isActive}) =>

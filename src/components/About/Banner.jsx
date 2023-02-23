@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Mountains from '../../assets/Mountains.png';
-// import '../styles/Banner.css';
+// import '../styles/Banner.scss';
 
 function Banner () {
     return (
