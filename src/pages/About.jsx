@@ -1,10 +1,9 @@
 import React from 'react';
-//Import all our components
 import Banner from '../components/About/Banner';
 import Header from '../components/Home/Header';
 import Collapsible from '../components/About/Collapsible';
 import Footer from '../components/Home/Footer';
-// import '../styles/About.scss';
+import '../styles/About.scss';
 
 function About () {
     return (

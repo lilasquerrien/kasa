@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 // import '../styles/Collapsible.scss';
-
+// Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import your icons
 import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 
