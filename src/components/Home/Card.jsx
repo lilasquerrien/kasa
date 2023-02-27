@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import Rentals from '../../datas/Rentals.json';
+import RentalsListing from '../../datas/RentalsListing.json';
 import '../../styles/Card.scss';
 
 function Card() {
     return (
         <section className='card'>
             {
-                Rentals.map(rental => 
+                RentalsListing.map(rental => 
                     <NavLink key={ rental.id } className='card__id' to={ `/rentals/${ rental.id}` }> 
                         <article>
                             <figure>
