@@ -6,20 +6,19 @@ import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 
 function Collapsible ({ label, children }) {
-    const [ Open,  setOpen ] = useState(false)
+    const [ isOpen,  setIsOpen ] = useState(false)
     const openCollapse = () => {
-        setOpen((Open) => !Open)
+        setIsOpen((Open) => !Open)
     }
-
         return (
             <div className='collapsible'>
             <div className='collapsible__toggle' onClick={openCollapse}>
                 <h2>{label}</h2>
-                {!Open ? (
+                {!isOpen ? (
                     <FontAwesomeIcon icon={faArrowDown} className='collapsible__arrow'/>) : (<FontAwesomeIcon icon={faArrowUp} className='collapsible__arrow'/>
                 )}
             </div>
-                { Open && 
+                { isOpen && 
             <div className='collapsible__content'>
                 {children}
             </div>

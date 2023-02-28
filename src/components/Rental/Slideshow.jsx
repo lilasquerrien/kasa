@@ -8,22 +8,27 @@ import '../../styles/Slideshow.scss';
 const Slideshow = () => {
     const { id } = useParams();
     let rental = RentalsListing.find(i => i.id === id);
-
+     
+    // Nb images à afficher
+    const picturesNb = Math.min(rental.pictures.length);
+     
+    // Tableau pour chaque image
+    const pictures = [];
+    for (let i = 0; i < picturesNb; i++) {
+        pictures.push(
+        <div key={i} className="each-slide-effect">
+            <div style={{ 'backgroundImage': `url(${rental.pictures[i]})` }}></div>
+        </div>
+      );
+    }
+     
     return (
-        <section id='Slideshow'>
+        <section id='slideshow'>
             <Slide>
-                <div className="each-slide-effect">
-                    <div style={{ 'backgroundImage': `url(${rental.pictures[0]})` }}></div>
-                </div>
-                <div className="each-slide-effect">
-                    <div style={{ 'backgroundImage': `url(${rental.pictures[1]})` }}></div>
-                </div>
-                <div className="each-slide-effect">
-                    <div style={{ 'backgroundImage': `url(${rental.pictures[2]})` }}></div>
-                </div>
+                {pictures}
             </Slide>
         </section>
-  );
-}
+    );
+};
 
 export default Slideshow;

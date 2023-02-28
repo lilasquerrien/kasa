@@ -18,9 +18,9 @@ function Rating () {
             star.push(<FontAwesomeIcon icon={faStar} style={{color:"#E3E3E3"}} alt="Grey Star" key={i} />);
         }
     }
-        return (
-            <div className='starsContentContainer'>{star}</div>
-        )
+            return (
+                <div className='starsContentContainer'>{star}</div>
+            )
 }
 
 export default Rating;
