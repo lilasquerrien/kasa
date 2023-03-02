@@ -1,6 +1,6 @@
 import React from 'react';
 import Mountains from '../../assets/Mountains.png';
-import '../../styles/Banner.scss';
+// import '../sass/layout/banner';
 
 function Banner () {
     return (

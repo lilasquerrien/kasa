@@ -1,6 +1,6 @@
 import React from 'react';
 import Cliffs from '../../assets/Cliffs.png';
-import '../../styles/Banner.scss';
+// import '../../styles/Banner.scss';
 
 function Banner () {
     return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles/Collapsible.scss';
+// import '../../sass/Collapsible.scss';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';

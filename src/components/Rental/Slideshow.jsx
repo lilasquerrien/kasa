@@ -3,7 +3,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { useParams } from 'react-router-dom';
 import RentalsListing from '../../datas/RentalsListing.json';
-import '../../styles/Slideshow.scss';
+// import '../../styles/Slideshow.scss';
 
 const Slideshow = () => {
     const { id } = useParams();

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Rentals from "./pages/Rentals";
 import Error from "./pages/Error";
+import './sass/main.scss';
 
 <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
 

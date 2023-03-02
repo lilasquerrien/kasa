@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import RentalsListing from '../../datas/RentalsListing.json';
-import '../../styles/Card.scss';
+// import '../../styles/Card.scss';
 
 function Card() {
     return (

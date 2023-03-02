@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+
+    &__logo {
+        left: 0%;
+        right: 83.04%;
+        top: 0%;
+        bottom: 0%;
+    }
+
+    &__nav {
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+        
+        & a {
+            color: $primary-color;
+            font-size: $nav-font-size;
+            margin-left: 80px;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

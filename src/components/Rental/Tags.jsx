@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
 import RentalsListing from '../../datas/RentalsListing.json';
-import '../../styles/Tags.scss';
+// import '../../styles/Tags.scss';
 
 function Tags () {
     const { id } = useParams();

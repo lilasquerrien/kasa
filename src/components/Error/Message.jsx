@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../../styles/Message.scss';
+// import '../../styles/Message.scss';
 
 function Message () {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../assets/Logo.png';
 import Copyright from '../../assets/Copyright.png';
-import '../../styles/Footer.scss';
+// import '../../styles/Footer.scss';
 
 function Footer() {
 	return (

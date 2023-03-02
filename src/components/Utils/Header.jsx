@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/Logo.png';
-import '../../styles/Header.scss';
 
 function Header() {
 	return (
@@ -9,11 +8,13 @@ function Header() {
 			<div className='header__logo'>
 				<img src={ Logo } alt='Logo de Kasa'/>
 			</div>
-			<nav>
+			<nav className='header__nav'>
 				<NavLink to='/' className={({isActive}) =>
-					isActive ? 'activeLink': ""}>Accueil</NavLink>
+					isActive ? 'activeLink': ""}>Accueil
+				</NavLink> 
 				<NavLink to='/About' className={({isActive}) =>
-					isActive ? 'activeLink': ""}>À propos</NavLink> 
+					isActive ? 'activeLink': ""}>À propos
+				</NavLink> 
 			</nav>
         </header>
   	)

@@ -1,0 +1,19 @@
+@import './utils/animations';
+@import './utils/variables';
+
+@import './base/base';
+
+@import './layout/banner';
+@import './layout/header';
+@import './layout/footer';
+
+@import './components/card';
+@import './components/collapsible';
+@import './components/error';
+@import './components/slideshow';
+@import './components/tags';
+
+@import './pages/about';
+@import './pages/home';
+@import './pages/message';
+@import './pages/rentals';

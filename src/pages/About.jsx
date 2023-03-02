@@ -3,7 +3,7 @@ import Header from '../components/Utils/Header';
 import Banner from '../components/About/Banner';
 import Collapsible from '../components/About/Collapsible';
 import Footer from '../components/Utils/Footer';
-import '../styles/About.scss';
+// import '../styles/About.scss';
 
 function About () {
     return (
