@@ -1,15 +1,17 @@
 import React from 'react';
 import Header from '../components/Utils/Header';
-import Banner from '../components/About/Banner';
+import Banner from '../components/Utils/Banner';
 import Collapsible from '../components/About/Collapsible';
 import Footer from '../components/Utils/Footer';
-// import '../styles/About.scss';
+import Mountains from '../assets/Mountains.png';
 
 function About () {
     return (
         <section className='aboutContentContainer'>
             <Header />
-            <Banner />
+            <Banner 
+            image={ Mountains }
+            />
             <Collapsible
                 label={'Fiabilité'}
                 children={'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.'}

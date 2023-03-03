@@ -3,13 +3,12 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { useParams } from 'react-router-dom';
 import RentalsListing from '../../datas/RentalsListing.json';
-// import '../../styles/Slideshow.scss';
 
 const Slideshow = () => {
     const { id } = useParams();
     let rental = RentalsListing.find(i => i.id === id);
      
-    // Nb images à afficher
+    // Nb d'images à afficher
     const picturesNb = Math.min(rental.pictures.length);
      
     // Tableau pour chaque image

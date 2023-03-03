@@ -8,7 +8,6 @@ import Collapsible from '../components/About/Collapsible';
 import Rating from '../components/Rental/Rating';
 import Footer from '../components/Utils/Footer';
 import RentalsListing from '../datas/RentalsListing.json';
-// import '../styles/Rentals.scss';
 
 function Rental () {
   const { id } = useParams();

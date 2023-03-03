@@ -5,9 +5,9 @@ import Logo from '../../assets/Logo.png';
 function Header() {
 	return (
 	    <header className='header'>
-			<div className='header__logo'>
-				<img src={ Logo } alt='Logo de Kasa'/>
-			</div>
+			<NavLink to="/">
+				<img src={ Logo } alt='Logo de Kasa' className='header__logo'/>
+			</NavLink>
 			<nav className='header__nav'>
 				<NavLink to='/' className={({isActive}) =>
 					isActive ? 'activeLink': ""}>Accueil

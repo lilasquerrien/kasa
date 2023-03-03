@@ -1,5 +1,27 @@
-footer {
-        background-color: black;
+.footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #000000;
+        width: 1440px;
+        height: 160px;
+        margin-left: -100px;
+        margin-top: 40px;
+
+        &__logo {
+                display: block;
+                margin: auto;
+                width: 122px;
+                height: 39.44px;    
+        }
+
+        &__copyright {
+                text-align: center;
+                color: $banner-title-color;
+                font-size: $layout-font-size;
+                margin-top: -20px;
+                margin-bottom: 20px;      
+        }
 }
 
    

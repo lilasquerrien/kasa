@@ -1,16 +1,14 @@
 import React from 'react';
-import Logo from '../../assets/Logo.png';
-import Copyright from '../../assets/Copyright.png';
-// import '../../styles/Footer.scss';
+import FooterLogo from '../../assets/FooterLogo.png';
 
 function Footer() {
 	return (
 	    <footer className='footer'>
             <div className='footer__logo'>
-                <img src={ Logo } alt='Logo de Kasa' className='logo__image'/>
+                <img src={ FooterLogo } alt='Logo de Kasa' className='footer__image'/>
             </div>
             <div className='footer__copyright'>
-                <img src={ Copyright } alt='Copyright'/>
+                © 2020 Kasa. All rights reserved
             </div>
         </footer>
   	)

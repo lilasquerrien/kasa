@@ -9,8 +9,8 @@
 }
 
 body {
-  margin: auto;
   font-family: "Montserrat", sans-serif;
+  margin: 40px 100px 0 100px;
 }
 
 .banner {
@@ -19,8 +19,6 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 .banner__image {
   -o-object-fit: cover;
@@ -29,6 +27,7 @@ body {
   height: 223px;
   border-radius: 25px;
   filter: brightness(70%);
+  background-color: black;
 }
 .banner__title {
   position: absolute;
@@ -37,23 +36,16 @@ body {
   font-size: 48px;
   font-weight: 500;
   text-align: center;
-  flex-wrap: wrap;
-  z-index: 1;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 40px;
 }
 .header__logo {
-  left: 0%;
-  right: 83.04%;
-  top: 0%;
-  bottom: 0%;
+  width: 210.32px;
+  height: 68px;
 }
 .header__nav {
   display: flex;
@@ -70,8 +62,70 @@ body {
   text-decoration: underline;
 }
 
-footer {
-  background-color: black;
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  width: 1440px;
+  height: 160px;
+  margin-left: -100px;
+  margin-top: 40px;
+}
+.footer__logo {
+  display: block;
+  margin: auto;
+  width: 122px;
+  height: 39.44px;
+}
+.footer__copyright {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 24px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #F6F6F6;
+  margin-top: 40px;
+}
+.card__element {
+  position: relative;
+  display: flex;
+  height: 340px;
+  width: 340px;
+  margin: 25px;
+  cursor: pointer;
+  background-color: #FF6060;
+  border-radius: 10px;
+}
+.card__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.card__title {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 300px;
+  height: 52px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.67px;
+  color: #FFFFFF;
+  margin-left: 20px;
+  bottom: 0;
 }
 
 .each-slide-effect > div {
