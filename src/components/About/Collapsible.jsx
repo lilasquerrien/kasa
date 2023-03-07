@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-// import '../../sass/Collapsible.scss';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 
 function Collapsible ({ label, children }) {
@@ -12,17 +11,27 @@ function Collapsible ({ label, children }) {
     }
         return (
             <div className='collapsible'>
-            <div className='collapsible__toggle' onClick={openCollapse}>
-                <h2>{label}</h2>
-                {!isOpen ? (
-                    <FontAwesomeIcon icon={faArrowDown} className='collapsible__arrow'/>) : (<FontAwesomeIcon icon={faArrowUp} className='collapsible__arrow'/>
+                <div className='collapsible__toggle' onClick={openCollapse}>
+                    <h2>{label}</h2>
+                    {!isOpen ? (
+                        <FontAwesomeIcon icon={faChevronDown} className='collapsible__chevron'/>) : (<FontAwesomeIcon icon={faChevronUp} className='collapsible__chevron'/>
+                    )}
+                </div>
+                    { isOpen && 
+                <div className='collapsible__content'>
+                {Array.isArray(children) ? (
+                    <ul>
+                        {children.map(children=>
+                            <li>
+                                <h3>{ children }</h3> 
+                            </li>
+                        )}
+                    </ul>
+                ):(
+                    <h3>{children}</h3>
                 )}
-            </div>
-                { isOpen && 
-            <div className='collapsible__content'>
-                {children}
-            </div>
-                }
+                </div>
+                    }
             </div>
         )
     }

@@ -23,7 +23,7 @@ function Rental () {
         </div>
         <Tags />
         <div className='host'>
-          <h2>{rental.host.name}</h2>
+          <p>{rental.host.name}</p>
           <div className='host__picture'>
 				    <img src={ rental.host.picture } alt='Host photo'/>
 			    </div>

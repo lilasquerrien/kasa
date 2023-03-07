@@ -9,7 +9,7 @@ function Tags () {
         return (
             <div className="tags">
             {rental && (
-                <div className="tags__rental">
+                <div className="tags__content">
                 {rental.tags.map((tag) => (
                     <span key={tag} className="tags__span">
                     {tag}

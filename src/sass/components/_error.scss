@@ -1,0 +1,30 @@
+.message {
+    color: $primary-color;
+    text-align: center;
+
+    & h1 {
+        font-size: 288px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        margin-top: 80px;
+    } 
+    
+    & p {
+        font-size: $error-font-size;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        margin-top: -220px;
+        margin-bottom: 220px;
+    }
+
+    &__link {
+        color: $primary-color;
+        font-size: $card-font-size;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+    }
+
+    
+}

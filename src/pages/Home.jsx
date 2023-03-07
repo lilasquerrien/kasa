@@ -9,9 +9,9 @@ function Home () {
     return (
       <section className='homeContentContainer'>
         <Header />
-          <h1 className='banner__title'>Chez vous, partout et ailleurs</h1>
         <Banner 
           image={ Cliffs } 
+          content= 'Chez vous, partout et ailleurs'
         />
         <Card />
         <Footer />

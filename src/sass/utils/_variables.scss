@@ -2,19 +2,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 $primary-font: 'Montserrat', sans-serif;
+$tags-font-size: 14px;
 $body-font-size: 16px;
 $card-font-size: 18px;
 $layout-font-size: 24px;
+$error-font-size: 36px;
 $banner-font-size: 48px;
 
 /* Couleurs du site */
 
 $primary-color: #FF6060;
 $secondary-color: #F6F6F6;
-$banner-title-color: #FFFFFF;
+$text-color: #FFFFFF;
 $footer-color: black;
 $background-color: #E5E5E5;
+$picture-background-color: #C4C4C4;
 
 /* Styles du site */
 $border-radius: 25px;
 $card-radius: 10px;
+$collapsible-radius: 5px;
