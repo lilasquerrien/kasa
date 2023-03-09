@@ -29,6 +29,7 @@ function Rental () {
 			    </div>
         </div>
         <Rating />
+        <div className='collapsible__rentalspage'>
         <Collapsible
           label={'Description'}
           children={rental.description}
@@ -37,6 +38,7 @@ function Rental () {
           label={'Équipements'}
           children={rental.equipments}
         />
+        </div>
         <Footer />
       </section>
     );

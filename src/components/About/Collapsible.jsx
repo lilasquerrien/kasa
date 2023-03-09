@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-
 function Collapsible ({ label, children }) {
     const [ isOpen,  setIsOpen ] = useState(false)
     const openCollapse = () => {
@@ -20,15 +19,13 @@ function Collapsible ({ label, children }) {
                     { isOpen && 
                 <div className='collapsible__content'>
                 {Array.isArray(children) ? (
-                    <ul>
+                    <h3>
                         {children.map(children=>
-                            <li>
-                                <h3>{ children }</h3> 
-                            </li>
+                            <p>{ children }</p> 
                         )}
-                    </ul>
+                    </h3>
                 ):(
-                    <h3>{children}</h3>
+                    <h3>{ children }</h3>
                 )}
                 </div>
                     }
