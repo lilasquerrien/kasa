@@ -1,10 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import RentalsListing from '../../datas/RentalsListing.json';
-// import '../../styles/Header.scss';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar} from '@fortawesome/free-solid-svg-icons';
 
 function Rating () {
     const { id } = useParams();

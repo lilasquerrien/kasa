@@ -6,13 +6,14 @@
     border-radius: $border-radius;
     background-color: $secondary-color;
     margin-top: 40px;
+    padding: 20px;
 
     &__element {
         position: relative;
         display: flex;
         height: 340px;
         width: 340px;
-        margin: 25px;
+        margin: 20px;
         cursor: pointer;
         background-color: $primary-color;
         border-radius: $card-radius;
@@ -42,3 +43,41 @@
         @include textshadow;
     }
 }
+
+@media screen and (max-width: 998px) {
+
+    .card {
+
+        &__element {
+            height: 255px;
+            width: 100%;
+            margin: 20px 0 10px 0;
+        
+        }
+
+        
+    }
+}
+
+  @media screen and (max-width: 768px) {
+
+    .card {
+        background-color: transparent;
+        margin-top: 0;
+
+        &__element {
+            height: 255px;
+            width: 335px;
+            margin: 20px 0 10px 0;
+          
+        }
+
+        &__title {
+            height: 52px;
+            width: 250px;
+            margin-left: 10px;
+        }
+    }
+
+}
+

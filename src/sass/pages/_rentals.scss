@@ -1,40 +1,59 @@
-.infos {
-    color: $primary-color;
-    text-align: left;
-
-    h1 {
-        font-size: $error-font-size;
-        font-weight: 500;
-        line-height: 51px;
-    }
-
-    p {
-        font-size: $card-font-size;
-        font-weight: 500;
-        line-height: 26px;
-        margin-top: -20px;
-    }
-}
-
-.host {
+.infosContainer {
     display: flex;
-    justify-content: end;
-    align-items: center;
+}
 
-    p {
+.rentalsContainer {
+    width: 70%;
+
+    .infos {
         color: $primary-color;
-        font-size: $card-font-size;
-        font-weight: 500;
-        line-height: 26px;
-        text-align: right;
-        height: 52px;
-        width: 93px;
-    }
-
-    & img {
-        background-color: $picture-background-color;
-        border-radius: 50%;
-        width: 64px;
-        height: 64px;
+        text-align: left;
+    
+        h1 {
+            font-size: $error-font-size;
+            font-weight: 500;
+            line-height: 51px;
+            margin-top: 20px;
+        }
+    
+        p {
+            font-size: $card-font-size;
+            font-weight: 500;
+            line-height: 26px;
+            margin-top: -40px;
+        }
     }
 }
+
+.guestsContainer {
+    width: 30%;
+
+    .host {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        margin-top: 20px;
+    
+        p {
+            color: $primary-color;
+            font-size: $card-font-size;
+            line-height: 26px;
+            text-align: right;
+            height: 52px;
+            width: 93px;
+            margin-right: 10px;
+        }
+    
+        & img {
+            background-color: $picture-background-color;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            background-size: contain;
+        }
+    }
+}
+
+
+

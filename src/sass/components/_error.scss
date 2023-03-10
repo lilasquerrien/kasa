@@ -5,7 +5,6 @@
     & h1 {
         font-size: 288px;
         font-weight: 700;
-        letter-spacing: 0em;
         margin-top: 80px;
     } 
     
@@ -13,9 +12,8 @@
         font-size: $error-font-size;
         font-weight: 500;
         line-height: 51px;
-        letter-spacing: 0em;
-        margin-top: -220px;
-        margin-bottom: 220px;
+        margin-top: -240px;
+        margin-bottom: 160px;
     }
 
     &__link {
@@ -23,7 +21,6 @@
         font-size: $card-font-size;
         font-weight: 500;
         line-height: 26px;
-        letter-spacing: 0em;
     }
 
     

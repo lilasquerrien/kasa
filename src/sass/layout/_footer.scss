@@ -25,5 +25,28 @@
         }
 }
 
-   
+// @media screen and (max-width: 998px) {
+
+
+    
+      @media screen and (max-width: 768px) {
+    
+        .footer {
+    
+                &__logo {
+                        height: 39.5px;
+                        width: 122px;
+                        left: 127px;
+    
+                }
+    
+                &__copyright {
+                        font-size: $responsive-font-size;
+                        margin-top: -20px;
+                        margin-bottom: 40px;
+     
+                }
+        }
+    
+}
         

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import { useParams } from "react-router-dom";
 import Header from '../components/Utils/Header';
@@ -17,18 +16,24 @@ function Rental () {
       <section className='rentalsContentContainer'>
         <Header />
         <Slideshow />
-        <div className='infos'>
-          <h1>{rental.title}</h1>
-          <p>{rental.location}</p>
-        </div>
-        <Tags />
-        <div className='host'>
-          <p>{rental.host.name}</p>
-          <div className='host__picture'>
-				    <img src={ rental.host.picture } alt='Host photo'/>
-			    </div>
-        </div>
-        <Rating />
+        <section className='infosContainer'>
+          <aside className='rentalsContainer'>
+            <div className='infos'>
+              <h1 className='infos__title'>{rental.title}</h1>
+              <p className='infos__location'>{rental.location}</p>
+            </div>
+          <Tags />
+          </aside>
+          <aside className='guestsContainer'>
+          <div className='host'>
+            <p className='host__name'>{rental.host.name}</p>
+            <div className='host__picture'>
+              <img src={ rental.host.picture } alt='Owner Profile'/>
+            </div>
+          </div>
+          <Rating />
+          </aside>
+        </section>
         <div className='collapsible__rentalspage'>
         <Collapsible
           label={'Description'}

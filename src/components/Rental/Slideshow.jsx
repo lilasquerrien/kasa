@@ -26,6 +26,9 @@ const Slideshow = () => {
             <Slide>
                 {pictures}
             </Slide>
+            <div className="position">
+                <p>{pictures.number}/{pictures.length}</p>
+            </div>
         </section>
     );
 };

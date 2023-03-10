@@ -1,0 +1,12 @@
+.starsContentContainer {
+    display: flex;
+    justify-content: end;
+
+    & svg {
+        margin-left: 3px;
+        margin-top: 3px;
+        width: 30px;
+        height: 30px;
+    }
+  
+}
