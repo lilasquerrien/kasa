@@ -1,8 +1,9 @@
-.infosContainer {
+.rentalsContentContainer {
     display: flex;
+    flex-direction: row;
 }
 
-.rentalsContainer {
+.infosContainer {
     width: 70%;
 
     .infos {
@@ -26,7 +27,7 @@
 
 }
 
-.guestsContainer {
+.hostContainer {
     width: 30%;
 
     .host {
@@ -61,12 +62,12 @@
 
 @media screen and (max-width: 768px) {
 
-    .infosContainer {
+    .rentalsContentContainer {
         flex-direction: column;
         margin: 20px 20px 0 20px;
     }
     
-    .rentalsContainer {
+    .infosContainer {
         width: 100%;
 
         .infos {
@@ -86,7 +87,7 @@
         }
     }
 
-    .guestsContainer {
+    .hostContainer {
         width: 100%;
 
         .host {

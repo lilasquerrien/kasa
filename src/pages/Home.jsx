@@ -7,15 +7,22 @@ import Cliffs from '../assets/Cliffs.png';
 
 function Home () {
     return (
-      <section className='homeContentContainer'>
+      <>
+
         <Header />
-        <Banner 
-          image={ Cliffs } 
-          content= 'Chez vous, partout et ailleurs'
-        />
-        <Card />
+
+        <section className='homeContentContainer'>
+          <Banner 
+            image={ Cliffs } 
+            content= 'Chez vous, partout et ailleurs'
+          />
+          <Card />
+        </section>
+        
         <Footer />
-      </section>
+
+      </>
+     
     );
 }
   

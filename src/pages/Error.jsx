@@ -5,11 +5,17 @@ import Footer from '../components/Utils/Footer';
 
 function Error () {
     return (
-        <section className='errorContentContainer'>
+        <>
+
             <Header />
-            <Message />
+
+            <section className='errorContentContainer'>
+                <Message />
+            </section>
+
             <Footer />
-        </section>
+        
+        </>
     )
 }
 

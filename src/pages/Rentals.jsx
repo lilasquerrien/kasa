@@ -13,40 +13,49 @@ function Rental () {
   const rental = RentalsListing.find((item) => item.id === id);
 
     return (
-      <section className='rentalsContentContainer'>
+      <>
+
         <Header />
+        
         <Slideshow />
-        <section className='infosContainer'>
-          <aside className='rentalsContainer'>
-            <div className='infos'>
-              <h1 className='infos__title'>{rental.title}</h1>
-              <p className='infos__location'>{rental.location}</p>
+        <section className='footertest'>
+
+          <section className='rentalsContentContainer'>
+            <aside className='infosContainer'>
+              <div className='infos'>
+                <h1 className='infos__title'>{rental.title}</h1>
+                <p className='infos__location'>{rental.location}</p>
+              </div>
+              <Tags />
+            </aside>
+            <aside className='hostContainer'>
+            <div className='host'>
+              <p className='host__name'>{rental.host.name}</p>
+              <div className='host__picture'>
+                <img src={ rental.host.picture } alt='Owner Profile'/>
+              </div>
             </div>
-          <Tags />
-          </aside>
-          <aside className='guestsContainer'>
-          <div className='host'>
-            <p className='host__name'>{rental.host.name}</p>
-            <div className='host__picture'>
-              <img src={ rental.host.picture } alt='Owner Profile'/>
+            <Rating />
+            </aside>
+          </section>
+            <div className='collapsible__rentalspage'>
+            <Collapsible
+              label={'Description'}
+              children={rental.description}
+            />
+            <Collapsible
+              label={'Équipements'}
+              children={rental.equipments}
+            />
+           
             </div>
-          </div>
-          <Rating />
-          </aside>
-        </section>
-        <div className='collapsible__rentalspage'>
-        <Collapsible
-          label={'Description'}
-          children={rental.description}
-        />
-        <Collapsible
-          label={'Équipements'}
-          children={rental.equipments}
-        />
-        </div>
+            </section>
+       
+
         <Footer />
-      </section>
+     
+      </>
     );
-  }
+}
   
 export default Rental;

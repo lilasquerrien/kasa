@@ -6,9 +6,7 @@
         align-items: center;
         height: 209px;
         width: auto;
-        margin-left: -100px !important;
-        margin-right: -100px !important;
-        margin-top: 40px;
+        margin: 40px -100px 0px -100px;
 
         &__logo {
                 width: 122px;
@@ -25,11 +23,7 @@
 @media screen and (max-width: 768px) {
     
         .footer {
-
-                position: relative;
-                bottom: 0 !important;
-                margin: 0 !important;
-                width: auto;
+                margin: 40px 0 0 0;
 
                 &__logo {
                         height: 39.5px;
@@ -40,6 +34,6 @@
                         font-size: $responsive-font-size;
                 }
         }
-    
+
 }
         
