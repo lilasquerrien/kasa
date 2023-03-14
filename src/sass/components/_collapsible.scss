@@ -88,3 +88,62 @@
         
     }
 }
+
+// @media screen and (max-width: 998px) {
+
+  
+
+@media screen and (max-width: 768px) {
+
+    .collapsible {
+        margin-bottom: 40px;
+
+        &__toggle {
+            height: 30px;
+
+            & h2 {
+                font-size: $title-responsive-font-size;
+            }
+        }
+
+        &__content {
+            & h3 {
+                font-size: $responsive-font-size;
+                line-height: 17px;
+                text-align: justify;
+                padding: 10px 10px 40px 10px;
+            }
+        }
+      
+    }
+
+    .collapsible__rentalspage {
+        display: block;
+        margin: 20px 20px 0 20px;
+
+        & .collapsible {
+            width: 100%;
+
+            &__toggle {
+
+                & h2 {
+                    font-size: $title-responsive-font-size;
+                }
+            }
+
+            &__chevron {
+                font-size: $title-responsive-font-size;
+            }
+
+            &__content {
+                min-height: auto;
+
+                & h3 {
+                    font-size: $responsive-font-size;
+                }
+            }
+        }
+
+    }
+
+}

@@ -23,6 +23,7 @@
             margin-top: -40px;
         }
     }
+
 }
 
 .guestsContainer {
@@ -53,7 +54,56 @@
             background-size: contain;
         }
     }
+   
 }
 
+//@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
+
+    .infosContainer {
+        flex-direction: column;
+        margin: 20px 20px 0 20px;
+    }
+    
+    .rentalsContainer {
+        width: 100%;
+
+        .infos {
+            text-align: left;
+
+            h1 {
+                font-size: $card-font-size;
+                line-height: 26px;
+            }
+
+            p {
+                font-size: $tags-font-size;
+                line-height: 20px;
+                margin-top: -15px;
+            }
+
+        }
+    }
+
+    .guestsContainer {
+        width: 100%;
+
+        .host {
+
+            p {
+                font-size: $responsive-font-size;
+                height: 33px;
+                width: 93px;
+            }
+            
+            & img {
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+
+}
 
 

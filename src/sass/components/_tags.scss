@@ -20,3 +20,24 @@
     }
     
 }
+
+@media screen and (max-width: 768px) {
+
+    .tags {
+        color: $text-color;
+        position: relative;
+    
+        &__content {
+            font-size: $responsive-tags-font-size;
+        }
+    
+        &__span {
+            border-radius: $collapsible-radius;
+            height: 18px;
+            width: 84px;
+            padding-top: 0;
+            margin-right: 10px;
+        }
+
+    }
+}

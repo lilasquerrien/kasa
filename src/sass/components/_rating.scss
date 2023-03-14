@@ -8,5 +8,17 @@
         width: 30px;
         height: 30px;
     }
-  
+}
+
+@media screen and (max-width: 768px) {
+    .starsContentContainer {
+
+        justify-content: start;
+        margin-top: -40px;
+
+        & svg {
+            width: 15px;
+            height: 15px;
+        }
+    }
 }

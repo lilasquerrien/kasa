@@ -3,7 +3,7 @@
     text-align: center;
 
     & h1 {
-        font-size: 288px;
+        font-size: $title-error-font-size;
         font-weight: 700;
         margin-top: 80px;
     } 
@@ -22,6 +22,32 @@
         font-weight: 500;
         line-height: 26px;
     }
-
     
+}
+
+@media screen and (max-width: 768px) {
+
+    .message {
+        margin: 20px 20px 100px 20px;
+
+        & h1 {
+            font-size: $responsive-error-font-size;
+            margin-top: 200px;
+        }
+
+        & p {
+            font-size: $card-font-size;
+            margin-top: -80px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 25.67px;
+        }
+
+        &__link {
+            font-size: $tags-font-size;
+            line-height: 20px;
+    
+        }
+    }
 }

@@ -37,8 +37,9 @@
   @media screen and (max-width: 768px) {
 
     .header {
-        margin-bottom: 20px;
+        margin: 20px 20px 0 20px;
         align-items: center;
+        width: auto;
 
             &__logo {
                 height: 47px;
@@ -51,7 +52,7 @@
                 & a {
                     font-size: $responsive-font-size;
                     text-transform: uppercase;
-                    margin: 0 0 0 15px;
+                    margin: 0 0 0 10px;
                 }
             }
     }
