@@ -18,7 +18,7 @@ function Rating () {
         }
     }
             return (
-                <div className='starsContentContainer'>{star}</div>
+                <div className='stars'>{star}</div>
             )
 }
 

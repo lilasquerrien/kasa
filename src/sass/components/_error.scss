@@ -10,25 +10,24 @@
     
     & p {
         font-size: $error-font-size;
-        font-weight: 500;
         line-height: 51px;
-        margin-top: -240px;
         margin-bottom: 160px;
     }
 
     &__link {
         color: $primary-color;
         font-size: $card-font-size;
-        font-weight: 500;
         line-height: 26px;
     }
     
 }
 
-@media screen and (max-width: 768px) {
+// @media screen and (min-width: 769px) and (max-width: 998px) {
+
+@media screen and (max-width: 767px) {
 
     .message {
-        margin: 20px 20px 80px 20px;
+        margin: 20px;
 
         & h1 {
             font-size: $responsive-error-font-size;
@@ -37,7 +36,7 @@
 
         & p {
             font-size: $card-font-size;
-            margin-top: -80px;
+            margin-top: 20px;
             width: 80%;
             margin-left: auto;
             margin-right: auto;
@@ -47,7 +46,6 @@
         &__link {
             font-size: $tags-font-size;
             line-height: 20px;
-    
         }
     }
 }

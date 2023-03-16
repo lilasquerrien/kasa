@@ -2,17 +2,29 @@
 
 * { 
     box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: 500;
 }
+
+html {
+    height: 100%;
+} 
 
 body {
-    font-family: $primary-font;
-    margin: 40px 100px 0 100px;
+    position: relative;
     min-height: 100%;
+    padding-bottom: 209px;
 }
 
-@media screen and (max-width: 768px) {
+.container {
+    margin: 20px 100px;
+}
 
-    body {
-        margin: 0;
+
+@media screen and (max-width: 998px) {
+    .container {
+        margin: 0 20px;
     }
 }

@@ -10,19 +10,18 @@ function Home () {
       <>
 
         <Header />
-
-        <section className='homeContentContainer'>
-          <Banner 
-            image={ Cliffs } 
-            content= 'Chez vous, partout et ailleurs'
-          />
-          <Card />
+        <section className='container'>
+          <div className='homeBanner'>
+        <Banner
+          image={ Cliffs } 
+          content= 'Chez vous, partout et ailleurs'
+        />
+          </div>
+        <Card />
         </section>
-        
         <Footer />
 
       </>
-     
     );
 }
   

@@ -8,15 +8,13 @@ function Error () {
         <>
 
             <Header />
-
-            <section className='errorContentContainer'>
-                <Message />
+            <section className='container'>
+            <Message />
             </section>
-
             <Footer />
         
         </>
-    )
+    );
 }
 
 export default Error;

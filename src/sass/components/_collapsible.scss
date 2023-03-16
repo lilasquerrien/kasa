@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 40px;
 
     &__toggle {
         display: flex;
@@ -18,14 +19,13 @@
 
         & h2 {
             font-size: $layout-font-size;
-            font-weight: 500;
             line-height: 34px;
             text-align: left;
         }
     }
 
     &__chevron {
-       font-size: $layout-font-size;
+        font-size: $layout-font-size;
     }
 
     &__content {
@@ -49,13 +49,13 @@
             line-height: 34px;
             text-align: left;
             width: auto;
-            padding: 18px;  
+            padding: 20px 20px 5px 20px;  
         }
         
     }
 }
 
-.collapsible__rentalspage {
+.rentalsCollapsible {
         display: flex;
         gap: 5%;
         margin: 20px;
@@ -89,13 +89,11 @@
     }
 }
 
-// @media screen and (max-width: 998px) {
-
-  
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .collapsible {
+
+        margin: 20px 0;
 
         &__toggle {
             height: 30px;
@@ -117,13 +115,13 @@
       
     }
 
-    .collapsible__rentalspage {
+    .rentalsCollapsible {
         display: block;
-        margin-bottom: 20px;
-
+        margin: 0;
+      
         & .collapsible {
             width: 100%;
-
+      
             &__toggle {
 
                 & h2 {
@@ -144,8 +142,7 @@
                     margin: 0;
                 }
             }
+        
         }
-
     }
-
 }

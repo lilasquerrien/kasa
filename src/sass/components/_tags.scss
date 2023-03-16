@@ -5,9 +5,9 @@
     &__content {
         display: flex;
         font-size: $tags-font-size;
-        font-weight: 500;
         line-height: 20px;
         text-align: center;
+        margin-top: 20px;
     }
 
     &__span {
@@ -21,7 +21,7 @@
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .tags {
         color: $text-color;
@@ -29,6 +29,7 @@
     
         &__content {
             font-size: $responsive-tags-font-size;
+            margin-top: 10px;
         }
     
         &__span {
@@ -38,6 +39,6 @@
             padding-top: 0;
             margin-right: 10px;
         }
-
     }
+
 }

@@ -6,6 +6,7 @@
     border-radius: $border-radius;
     background-color: $secondary-color;
     margin-top: 40px;
+    margin-bottom: 40px;
     padding: 20px;
 
     &__element {
@@ -36,40 +37,37 @@
         width: 300px;
         height: 52px;
         font-size: $card-font-size;
-        font-weight: 500;
-        line-height: 25.67px;
+        line-height: 25px;
         color: $text-color;
         margin-left: 20px;
-        bottom: 0;
+        bottom: 10px;
         @include textshadow;
     }
 }
 
-@media screen and (max-width: 998px) {
+@media screen and (min-width: 768px) and (max-width: 998px) {
 
     .card {
-        margin: 20px 20px 10px 20px;
         padding: 0;
 
         &__element {
-            height: 100%;
             width: 100%;
-            margin: 20px 0 10px 0;
-        
+            margin: 20px;
         }
     }
 }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
 
     .card {
         background-color: transparent;
-        margin-top: 0;
+        padding: 0;
+        margin: 5px 0 20px 0;
     
         &__element {
-            height: 255px;
             width: 100%;
-            margin: 20px 0 10px 0;
+            height: 255px;
+            margin: 10px 0;
         }
 
         &__title {

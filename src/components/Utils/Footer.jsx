@@ -11,7 +11,7 @@ function Footer() {
                 © 2020 Kasa. All rights reserved
             </div>
         </footer>
-  	)
+  	);
 }
 
 export default Footer;

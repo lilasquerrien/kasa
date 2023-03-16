@@ -17,7 +17,7 @@ function Header() {
 				</NavLink> 
 			</nav>
         </header>
-  	)
+  	);
 }
 
 export default Header;

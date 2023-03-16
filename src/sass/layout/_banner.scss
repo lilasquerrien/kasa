@@ -4,7 +4,7 @@
     width: 100%;;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 30px;
    
     &__image {
         object-fit: cover;
@@ -21,39 +21,46 @@
         text-align: center;
         color: $text-color;
         font-size: $banner-font-size;
-        font-weight: 500;
         z-index: 2;
     }
 }
 
-// @media screen and (max-width: 998px) {
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
 
     .banner {
-        margin: 20px 20px 0 20px;
+
+        &__title {
+            font-size: $error-font-size;
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .banner {
+        margin: 10px 0;
         height: 223px;
         width: auto;
 
         &__title {
             font-size: $layout-font-size;
             text-align: left;
-            width: 62%!important;
+            width: 70% !important;
             margin-left: -80px;
             
         }
     }
 
-    .homeContentContainer {
+    .homeBanner {
+    
         .banner {
             height: 111px;
-            
+
             &__image {
                 border-radius: $card-radius;
             }
         }
     }
 
-}
-    
+}  

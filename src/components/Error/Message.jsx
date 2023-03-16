@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import '../../styles/Message.scss';
 
 function Message () {
     return (
@@ -9,7 +8,7 @@ function Message () {
             <p className='message__details'>Oups! La page que vous demandez n'existe pas.</p>
             <NavLink className='message__link' to='/'>Retourner sur la page d'acceuil</NavLink>
         </div>
-    )
+    );
 }
 
 export default Message;

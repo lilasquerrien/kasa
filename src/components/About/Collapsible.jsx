@@ -30,7 +30,7 @@ function Collapsible ({ label, children }) {
                 </div>
                     }
             </div>
-        )
+        );
     }
 
 export default Collapsible;
