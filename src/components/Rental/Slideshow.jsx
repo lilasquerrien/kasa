@@ -37,9 +37,9 @@ const Slideshow = () => {
     return (
         <div className="slideshow"
             style={{ backgroundImage: `url(${rental.pictures[currentPictureIndex]})`}}>
-            <div className={rental.pictures.length === 1 ? "slidehow__icon--hidden" : "slideshow__icon"}>
-                <button className="slideshow__btn" onClick={leftSlide}><FontAwesomeIcon icon={faChevronLeft} style={{color:"#FFFFFF"}} alt="Left Chevron"/></button>
-                <button className="slideshow__btn" onClick={rightSlide}><FontAwesomeIcon icon={faChevronRight} style={{color:"#FFFFFF"}} alt="Right Chevron"/></button>
+            <div className={rental.pictures.length === 1 ? "slideshow__icon--hidden" : "slideshow__icon"}>
+                <button className="slideshow__icon__btn" onClick={leftSlide}><FontAwesomeIcon icon={faChevronLeft} style={{color:"#FFFFFF"}} alt="Left Chevron"/></button>
+                <button className="slideshow__icon__btn" onClick={rightSlide}><FontAwesomeIcon icon={faChevronRight} style={{color:"#FFFFFF"}} alt="Right Chevron"/></button>
             </div>
             { rental.pictures.length > 1 &&
             <p className="slideshow__text">{currentPictureIndex +1}/{rental.pictures.length}</p>

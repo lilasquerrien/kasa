@@ -30,23 +30,23 @@
             &--hidden {
                 display: none;
             }
-    }
 
-    &__btn {
-      background: transparent;
-      border: 0;
-      cursor: pointer;
-
-          &:hover {
-              transform: scale(1.1);
-              @include arrowtransition;
-          }
+            &__btn {
+                background: transparent;
+                border: 0;
+                cursor: pointer;
           
-          & svg {
-              width: 45px;
-              height: 80px;
-              margin: 10px;
-          }
+                    &:hover {
+                        transform: scale(1.1);
+                        @include arrowtransition;
+                    }
+                    
+                    & svg {
+                        width: 45px;
+                        height: 80px;
+                        margin: 10px;
+                    }
+              }
     }
 
 }
