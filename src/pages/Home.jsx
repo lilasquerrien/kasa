@@ -13,7 +13,7 @@ function Home () {
         <section className='container'>
           <div className='homeBanner'>
         <Banner
-          image={ Cliffs } 
+          image= { Cliffs } 
           content= 'Chez vous, partout et ailleurs'
         />
           </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+// Le composant NavLink fournit un moyen déclaratif pour naviguer dans l'application. Il est similaire au composant Link , mais il permet aussi d'appliquer les styles actifs au lien quand il est actif
+
 function Message () {
     return (
         <div className='message'>

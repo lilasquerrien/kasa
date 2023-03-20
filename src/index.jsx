@@ -10,6 +10,8 @@ import './sass/main.scss';
 
 <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
 
+// Si l'id n'existe pas alors on renvoie vers la page erreur sinon on renvoie vers la page rental
+
 function RentalsPage() {
   const { id } = useParams();
   let page = RentalsListing.find(i => i.id === id)

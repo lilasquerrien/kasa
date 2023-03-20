@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar} from '@fortawesome/free-solid-svg-icons';
 
 function Rating () {
-    const { id } = useParams();
+    const { id } = useParams(); // The useParams hook returns an object of key/value pairs of the dynamic params from the current URL that were matched by the <Route path>
     let rental = RentalsListing.find(i => i.id === id);
 	const star = [];
 

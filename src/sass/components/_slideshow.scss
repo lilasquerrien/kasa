@@ -61,13 +61,16 @@
         border-radius: $card-radius;
         margin: 20px;
 
-        &__btn {
+        &__icon {
 
-            & svg {
-                width: 12px;
-                height: 20px;
+            &__btn {
+
+                & svg {
+                    width: 12px;
+                    height: 20px;
+                }
+
             }
-
         }
 
         &__text {
