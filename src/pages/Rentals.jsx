@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Header from '../components/Utils/Header';
 import Slideshow from '../components/Rental/Slideshow';
 import Tags from '../components/Rental/Tags';
-import Collapsible from '../components/About/Collapsible';
+import Collapsible from '../components/Utils/Collapsible';
 import Rating from '../components/Rental/Rating';
 import Footer from '../components/Utils/Footer';
 import RentalsListing from '../datas/RentalsListing.json';

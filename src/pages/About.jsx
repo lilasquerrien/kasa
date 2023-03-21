@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Utils/Header';
 import Banner from '../components/Utils/Banner';
-import Collapsible from '../components/About/Collapsible';
+import Collapsible from '../components/Utils/Collapsible';
 import Footer from '../components/Utils/Footer';
 import Mountains from '../assets/Mountains.png';
 

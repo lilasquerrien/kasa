@@ -8,7 +8,7 @@ import Error from "./pages/Error";
 import RentalsListing from './datas/RentalsListing.json';
 import './sass/main.scss';
 
-<script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
+<script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>;
 
 // Si l'id n'existe pas alors on renvoie vers la page erreur sinon on renvoie vers la page rental
 
