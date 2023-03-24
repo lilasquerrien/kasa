@@ -30,7 +30,7 @@ function Rental () {
             <div className='host'>
               <p className='host__name'>{rental.host.name}</p>
               <div className='host__picture'>
-                <img src={ rental.host.picture } alt='Owner Profile'/>
+                <img src={rental.host.picture} alt='Owner Profile'/>
               </div>
             </div>
         <Rating />

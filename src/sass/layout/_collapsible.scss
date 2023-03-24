@@ -118,7 +118,7 @@
             padding: 10px;
 
             & h2 {
-                font-size: $title-responsive-font-size;
+                font-size: $responsive-title-font-size;
             }
         }
 
@@ -144,12 +144,12 @@
             &__toggle {
 
                 & h2 {
-                    font-size: $title-responsive-font-size;
+                    font-size: $responsive-title-font-size;
                 }
             }
 
             &__chevron {
-                font-size: $title-responsive-font-size;
+                font-size: $responsive-title-font-size;
             }
 
             &__content {
